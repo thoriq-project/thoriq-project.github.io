@@ -1,0 +1,152 @@
+/* PC Laptop and hiigher */
+@media screen and (min-width: 1024px) {
+  nav ul {
+    width: 30%;
+  }
+}
+
+/* Tablet size */
+@media screen and (max-width: 1024px) {
+  .container {
+    height: 700px;
+  }
+
+  .menu-bar {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav ul {
+    display: block;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: max-content;
+    order: 3;
+    position: absolute;
+    top: 0;
+    transition: 00.5s;
+    padding-top: 50px;
+    z-index: -1;
+    transform: translateY(-100%);
+  }
+
+  nav ul.active {
+    display: block;
+    transform: translateY(0);
+    transition: 0.5s;
+  }
+
+  nav ul li a {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav {
+    padding-right: 3vw;
+  }
+}
+
+/* Mobile size */
+@media screen and (max-width: 540px) {
+  .home-content {
+    grid-template-columns: 1fr;
+  }
+  .home-left,
+  .home-right {
+    display: none;
+  }
+
+  .container {
+    height: 100vh;
+  }
+  /* _______ */
+  /* Header */
+  nav ul {
+    display: block;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: max-content;
+    order: 3;
+    position: absolute;
+    top: 0;
+    transition: 00.5s;
+    padding-top: 50px;
+    z-index: -1;
+    transform: translateY(-100%);
+  }
+
+  nav ul.active {
+    display: block;
+    transform: translateY(0);
+    transition: 0.5s;
+  }
+
+  nav ul li a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-bar {
+    display: block;
+  }
+
+  nav {
+    padding-right: 3vw;
+  }
+
+  .logo {
+    width: 20vw;
+  }
+
+  /* Home */
+  .tho,
+  .riq,
+  .left-decoration-home,
+  .bottom-rec-home {
+    display: none;
+  }
+
+  .pic-frame {
+    width: 100vw;
+    left: 0;
+  }
+
+  .text-container {
+    bottom: -1px;
+  }
+
+  .text-container p {
+    font-size: 1.2em;
+  }
+
+  /* About */
+
+  .wrapper {
+    padding: 2%;
+  }
+
+  .about-header {
+    font-size: 1.2rem;
+  }
+
+  .wrapper .about-me {
+    display: none;
+  }
+
+  .about {
+    padding-top: 30px;
+  }
+
+  .content-item-about {
+    grid-template-columns: repeat(1fr);
+
+    grid-column-gap: 10px;
+  }
+
+  .about .eli .obj-1 {
+    display: none;
+  }
+}
