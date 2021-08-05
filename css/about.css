@@ -8,7 +8,7 @@
 .about-container {
   width: 100vw;
   height: max-content;
-  background-color: black;
+  background-color: #101010;
   position: relative;
   z-index: -2;
   display: flex;
@@ -65,7 +65,7 @@
 .about-content-wrapper {
   width: 100%;
   height: max-content;
-  background-color: rgba(0, 0, 0, 0.226);
+  background-color: rgba(10, 10, 10, 0.479);
   padding: 15px;
 }
 
@@ -127,7 +127,7 @@
 .image-item {
   width: 150px;
   height: 100%;
-  background-color: rgb(0, 0, 0);
+  background-color: #101010;
   display: flex;
   justify-content: center;
   align-items: center;
