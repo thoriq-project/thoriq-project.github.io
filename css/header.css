@@ -87,12 +87,14 @@ nav ul li a:active {
   color: white;
 }
 
-.menu-bar {
+.fa-bars {
+  color: white;
+  font-size: 1.5rem;
   display: none;
 }
 
-.fa-bars {
-  color: #101010;
+.fa-times {
+  color: white;
   font-size: 1.5rem;
 }
 

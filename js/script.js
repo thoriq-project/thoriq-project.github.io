@@ -1,5 +1,10 @@
 let header = document.querySelector("header");
 let navListItem = document.querySelectorAll(".nav-item");
+let menuBar = document.querySelector(".fa-bars");
+
+function myFunction(x) {
+  x.classList.toggle("fa-times");
+}
 
 window.onscroll = () => {
   let onScrollHeight = window.scrollY;

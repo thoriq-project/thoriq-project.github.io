@@ -244,11 +244,11 @@
 .home-rec-right {
   width: 8vh;
   height: 8vh;
-  background-color: rgb#101010;
+  background-color: #101010;
   display: block;
   position: absolute;
   bottom: 3vh;
-  right: 3vh;
+  right: 5vh;
 }
 
 .home-rec-right span {
