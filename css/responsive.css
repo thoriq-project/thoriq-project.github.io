@@ -89,12 +89,12 @@
     text-align: center;
   }
 
-  .fa-bars {
-    display: inline;
-  }
-
   nav {
     padding-right: 3vw;
+  }
+
+  .menu-bar {
+    display: flex;
   }
 
   /* Home */

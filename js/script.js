@@ -1,10 +1,19 @@
 let header = document.querySelector("header");
 let navListItem = document.querySelectorAll(".nav-item");
-let menuBar = document.querySelector(".fa-bars");
+let menuBar = document.querySelector(".menu-bar");
 
-function myFunction(x) {
-  x.classList.toggle("fa-times");
-}
+let bar1 = document.querySelector(".bar1");
+let bar2 = document.querySelector(".bar2");
+let bar3 = document.querySelector(".bar3");
+
+const barList = [bar1, bar2, bar3];
+
+menuBar.addEventListener("click", () => {
+  for (let i = 0; i < barList.length; i++) {
+    let element = barList[i];
+    element.classList.toggle("active");
+  }
+});
 
 window.onscroll = () => {
   let onScrollHeight = window.scrollY;

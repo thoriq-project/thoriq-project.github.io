@@ -87,25 +87,41 @@ nav ul li a:active {
   color: white;
 }
 
-.fa-bars {
-  color: white;
-  font-size: 1.5rem;
+/* bar coba */
+
+.menu-bar {
+  width: 25px;
+  height: 25px;
+  flex-direction: column;
+  /* background-color: pink; */
   display: none;
-}
-
-.fa-times {
-  color: white;
-  font-size: 1.5rem;
-}
-
-.fa-bars {
+  justify-content: space-evenly;
+  align-items: space;
+  position: relative;
   cursor: pointer;
 }
 
-.fa-bars:active {
-  color: #ff9900;
+.menu-bar span {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transition: 0.4s;
 }
 
-.fa-bars.active {
-  color: white;
+.bar1.active {
+  background-color: white;
+  transform: rotate(45deg);
+  /* transform-origin: center center; */
+  position: absolute;
+}
+
+.bar2.active {
+  display: none;
+  transform: scaleX(0.5);
+}
+
+.bar3.active {
+  background-color: white;
+  transform: rotate(-45deg);
+  position: absolute;
 }
