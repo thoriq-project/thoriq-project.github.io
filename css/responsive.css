@@ -47,18 +47,6 @@
 
 /* Mobile size */
 @media screen and (max-width: 540px) {
-  .home-content {
-    grid-template-columns: 1fr;
-  }
-  .home-left,
-  .home-right {
-    display: none;
-  }
-
-  .container {
-    height: 100vh;
-  }
-  /* _______ */
   /* Header */
   nav ul {
     display: block;
@@ -84,6 +72,10 @@
     width: 20.5vw;
   }
 
+  .nav-logo a {
+    font-size: 1.4rem;
+  }
+
   nav ul li a {
     width: 100%;
     text-align: center;
@@ -98,24 +90,21 @@
   }
 
   /* Home */
-  .tho,
-  .riq,
-  .left-decoration-home,
-  .bottom-rec-home {
+
+  .home-content {
+    grid-template-columns: 1fr;
+  }
+  .home-left,
+  .home-right {
     display: none;
   }
 
-  .pic-frame {
-    width: 100vw;
-    left: 0;
+  .container {
+    height: 100vh;
   }
 
   .text-container {
-    bottom: -1px;
-  }
-
-  .text-container p {
-    font-size: 1.2em;
+    bottom: -1;
   }
 
   /* About */

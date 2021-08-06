@@ -1,6 +1,8 @@
 let header = document.querySelector("header");
 let navListItem = document.querySelectorAll(".nav-item");
+let navHome = document.querySelector(".nav-item");
 let menuBar = document.querySelector(".menu-bar");
+let menuList = document.querySelector("nav ul");
 
 let bar1 = document.querySelector(".bar1");
 let bar2 = document.querySelector(".bar2");
@@ -13,6 +15,17 @@ menuBar.addEventListener("click", () => {
     let element = barList[i];
     element.classList.toggle("active");
   }
+  menuList.classList.toggle("active");
+  navListItem.forEach((element) => {
+    element.classList.add("active");
+  });
+});
+
+navHome.addEventListener("click", () => {
+  menuList.classList.remove("active");
+  barList.forEach((a) => {
+    a.classList.remove("active");
+  });
 });
 
 window.onscroll = () => {
