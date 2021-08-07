@@ -22,3 +22,59 @@ a {
   width: 100vw;
   height: max-content;
 }
+
+.content {
+  width: 100vw;
+  height: max-content;
+  background-color: #101010;
+  position: relative;
+  z-index: -2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 4vw 30px 4vw;
+}
+
+.bg-content-decoration {
+  width: 100%;
+  height: 100%;
+  /* background-color: pink; */
+  position: absolute;
+  bottom: 0;
+}
+
+/* Background objek decoration */
+.bg {
+  position: absolute;
+}
+
+.obj-1 {
+  width: 30vh;
+  height: 30vh;
+  background-color: #50d8d7;
+  border-radius: 50%;
+  filter: blur(30px);
+  top: 40px;
+  right: 0;
+}
+
+.obj-2 {
+  width: 30vh;
+  height: 30vh;
+  background-color: #ff9900;
+  border-radius: 50%;
+  filter: blur(30px);
+  bottom: 0;
+  left: 0;
+}
+
+.obj-3 {
+  width: 15vh;
+  height: 15vh;
+  background-color: #50d8d7;
+  border-radius: 50%;
+  filter: blur(100px);
+  top: 30%;
+  left: 30%;
+}

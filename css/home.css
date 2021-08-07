@@ -20,20 +20,20 @@
 .home-obj-1 {
   position: absolute;
   display: block;
-  width: 40vh;
-  height: 40vh;
+  width: 21vw;
+  height: 21vw;
   filter: blur(30px);
   border-radius: 20vh;
   background-color: #50d8d7;
-  left: -20vh;
-  top: 20vh;
+  left: -15vw;
+  top: 10vh;
 }
 
 .home-obj-2 {
   position: absolute;
   display: block;
-  width: 30vh;
-  height: 30vh;
+  width: 20vw;
+  height: 20vw;
   filter: blur(35px);
   /* border-radius: 20vh; */
   transform: rotate(45deg);
@@ -44,12 +44,12 @@
 .home-obj-3 {
   position: absolute;
   display: block;
-  width: 30vh;
-  height: 30vh;
+  width: 25vw;
+  height: 25vw;
   filter: blur(30px);
   border-radius: 20vh;
   background-color: #50d8d7;
-  right: -10vh;
+  right: -18vw;
   top: 20vh;
 }
 
@@ -104,7 +104,7 @@
   width: 25px;
   height: 25px;
   display: block;
-  background-color: #ff9900cc;
+  background-color: #50d8d7;
   border-radius: 50%;
 }
 
@@ -112,7 +112,7 @@
   width: 25px;
   height: 25px;
   display: block;
-  background-color: #50d8d8e8;
+  background-color: #000000ce;
   border-radius: 50%;
   position: absolute;
   right: -10px;
@@ -242,8 +242,8 @@
 }
 
 .home-rec-right {
-  width: 8vh;
-  height: 8vh;
+  width: 70px;
+  height: 70px;
   background-color: #101010;
   display: block;
   position: absolute;

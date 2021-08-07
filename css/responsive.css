@@ -1,18 +1,30 @@
-/* PC Laptop and hiigher */
-@media screen and (min-width: 1025px) {
-  nav ul {
-    width: 30%;
+/* Tablet size */
+@media (max-width: 1024px) {
+  /* Tablet Home */
+  .home {
+    height: 740px;
+  }
+
+  .home-obj-1 {
+    left: -15vw;
+    top: 10vh;
+  }
+
+  .home-obj-2 {
+    bottom: 10vh;
+  }
+
+  .home-obj-3 {
+    right: -20vw;
+    top: 5vh;
   }
 }
 
-/* Tablet size */
-@media screen and (max-width: 1024px) {
-  .container {
-    height: 700px;
-  }
-
-  nav ul {
-    display: none;
+/* Small Tablet size */
+@media (max-width: 768px) {
+  /* Navbar or Header */
+  header.active {
+    background-color: #50d8d7;
   }
 
   nav ul {
@@ -35,6 +47,10 @@
     transition: 0.5s;
   }
 
+  .nav-logo a {
+    font-size: 1.4rem;
+  }
+
   nav ul li a {
     width: 100%;
     text-align: center;
@@ -43,11 +59,42 @@
   nav {
     padding-right: 3vw;
   }
+
+  .menu-bar {
+    display: flex;
+  }
+
+  .menu-bar span {
+    background-color: #101010;
+  }
+
+  /* Tablet Home */
+  .home {
+    height: 740px;
+  }
+
+  .home-content {
+    grid-template-columns: 1fr 9fr;
+  }
+
+  .home-mid {
+    display: none;
+  }
+
+  .home-left {
+    background-color: #ff9900;
+  }
 }
 
+/* ------------------------------------------------ */
+
 /* Mobile size */
-@media screen and (max-width: 540px) {
-  /* Header */
+@media (max-width: 540px) {
+  /* Mobile Header and Navbar */
+  header.active {
+    background-color: #101010;
+  }
+
   nav ul {
     display: block;
     background-color: #101010;
@@ -89,49 +136,31 @@
     display: flex;
   }
 
-  /* Home */
+  .menu-bar span {
+    background-color: white;
+  }
 
+  /* Mobile Home */
   .home-content {
     grid-template-columns: 1fr;
   }
+
   .home-left,
   .home-right {
     display: none;
   }
 
-  .container {
+  .home {
     height: 100vh;
   }
 
-  .text-container {
-    bottom: -1;
+  .home-mid {
+    display: flex;
   }
 
-  /* About */
+  /* Mobile About */
 
-  .wrapper {
-    padding: 2%;
-  }
-
-  .about-header {
-    font-size: 1.2rem;
-  }
-
-  .wrapper .about-me {
-    display: none;
-  }
-
-  .about {
-    padding-top: 30px;
-  }
-
-  .content-item-about {
-    grid-template-columns: repeat(1fr);
-
-    grid-column-gap: 10px;
-  }
-
-  .about .eli .obj-1 {
-    display: none;
+  #about {
+    padding-top: 50px;
   }
 }
