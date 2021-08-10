@@ -1,5 +1,5 @@
-.about-content-wrapper {
-  width: 100%;
+.content-wrapper {
+  width: 96vw;
   height: max-content;
   background-color: rgba(10, 10, 10, 0.479);
   backdrop-filter: blur(30px);
@@ -17,6 +17,7 @@
 .about-header h1 {
   color: white;
   padding: 10px 0px;
+  font-size: 1.7em;
   /* background-color: pink; */
 }
 
