@@ -28,7 +28,6 @@ a {
   height: max-content;
   background-color: #101010;
   position: relative;
-  z-index: -2;
   display: flex;
   flex-direction: column;
   justify-content: center;
