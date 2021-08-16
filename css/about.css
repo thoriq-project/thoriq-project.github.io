@@ -1,9 +1,16 @@
 .content-wrapper {
-  width: 96vw;
+  width: 80vw;
   height: max-content;
-  background-color: rgba(10, 10, 10, 0.479);
-  backdrop-filter: blur(30px);
-  padding: 15px;
+  background-color: rgba(51, 51, 51, 0.137);
+  backdrop-filter: blur(100px);
+  padding: 15px 3vw;
+}
+
+@media (max-width: 768px) {
+  /* Tablet Content Container */
+  .content-wrapper {
+    width: 90vw;
+  }
 }
 
 .about-header {
