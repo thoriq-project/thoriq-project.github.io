@@ -13,6 +13,7 @@
 
     <!-- My Icons -->
     <link rel="stylesheet" href="icon/css/font-awesome.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.13.0/devicon.min.css" />
 
     <!-- My Css -->
     <link rel="stylesheet" href="css/style.css" />
@@ -21,6 +22,9 @@
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/gallery.css" />
+
+    <!-- Animated on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- Header -->
@@ -161,14 +165,15 @@
                   <p>Tools :</p>
                   <div class="icon-area">
                     <ul>
-                      <li><i class="fa fa-automobile"></i></li>
-                      <li><i class="fa fa-briefcase"></i></li>
-                      <li><i class="fa fa-camera"></i></li>
+                      <li><i class="devicon-android-plain"></i></li>
+                      <li><i class="devicon-java-plain"></i></li>
+                      <li><i class="devicon-firebase-plain"></i></li>
+                      <li><i class="devicon-xd-plain"></i></li>
                     </ul>
                   </div>
                 </div>
               </div>
-              <div class="gallery-image">
+              <div class="gallery-image" data-aos="fade-left" data-aos-duration="3000">
                 <div class="image one"></div>
                 <div class="image-overlay">
                   <div class="btn-view-img">View Image</div>
@@ -189,15 +194,16 @@
                   <p>Tools :</p>
                   <div class="icon-area">
                     <ul>
-                      <li><i class="fa fa-automobile"></i></li>
-                      <li><i class="fa fa-briefcase"></i></li>
-                      <li><i class="fa fa-camera"></i></li>
+                      <li><i class="devicon-android-plain"></i></li>
+                      <li><i class="devicon-flutter-plain"></i></li>
+                      <li><i class="devicon-firebase-plain"></i></li>
+                      <li><i class="devicon-figma-plain"></i></li>
                     </ul>
                   </div>
                 </div>
               </div>
-              <div class="gallery-image">
-                <div class="image one"></div>
+              <div class="gallery-image" data-aos="fade-right" data-aos-duration="3000">
+                <div class="image two"></div>
                 <div class="image-overlay">
                   <div class="btn-view-img">View Image</div>
                   <div class="btn-view-code">View Code</div>
@@ -217,15 +223,15 @@
                   <p>Tools :</p>
                   <div class="icon-area">
                     <ul>
-                      <li><i class="fa fa-automobile"></i></li>
-                      <li><i class="fa fa-briefcase"></i></li>
-                      <li><i class="fa fa-camera"></i></li>
+                      <li><i class="devicon-css3-plain"></i></li>
+                      <li><i class="devicon-html5-plain"></i></li>
+                      <li><i class="devicon-javascript-plain"></i></li>
                     </ul>
                   </div>
                 </div>
               </div>
-              <div class="gallery-image">
-                <div class="image one"></div>
+              <div class="gallery-image" data-aos="fade-left" data-aos-duration="3000">
+                <div class="image three"></div>
                 <div class="image-overlay">
                   <div class="btn-view-img">View Image</div>
                   <div class="btn-view-code">View Code</div>
@@ -245,15 +251,15 @@
                   <p>Tools :</p>
                   <div class="icon-area">
                     <ul>
-                      <li><i class="fa fa-automobile"></i></li>
-                      <li><i class="fa fa-briefcase"></i></li>
-                      <li><i class="fa fa-camera"></i></li>
+                      <li><i class="devicon-react-original"></i></li>
+                      <li><i class="devicon-javascript-plain"></i></li>
+                      <li><i class="devicon-nodejs-plain"></i></li>
                     </ul>
                   </div>
                 </div>
               </div>
-              <div class="gallery-image">
-                <div class="image one"></div>
+              <div class="gallery-image" data-aos="fade-right" data-aos-duration="3000">
+                <div class="image four"></div>
                 <div class="image-overlay">
                   <div class="btn-view-img">View Image</div>
                   <div class="btn-view-code">View Code</div>
@@ -265,5 +271,9 @@
       </section>
     </div>
     <script src="/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
