@@ -1,3 +1,88 @@
 #contact {
   padding-top: 50px;
 }
+
+.contact-form-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+}
+
+.form-left {
+  background-color: transparent;
+}
+
+.form-left h3 {
+  color: white;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 20px;
+}
+
+.input-box span {
+  position: absolute;
+  color: white;
+}
+
+.input-box input {
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  border-bottom: 2px solid white;
+}
+
+.form-left form {
+  display: flex;
+}
+
+.form-left .data-form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.form-left .message-form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 20px;
+  padding: 1rem;
+}
+
+.form-left .message-form textarea {
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  border-bottom: 2px solid white;
+  height: 100%;
+}
+
+.message-form span {
+  color: white;
+  position: absolute;
+}
+
+.form-right {
+  background-color: pink;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 540px) {
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-form-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 2fr;
+  }
+}
