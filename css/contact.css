@@ -163,3 +163,21 @@
 .contact-right {
   background-color: #ff9900;
 }
+
+/* Responsive */
+
+@media (max-width: 540px) {
+  .contact-form-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .contact-right {
+    display: none;
+  }
+
+  .contact-left form {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
