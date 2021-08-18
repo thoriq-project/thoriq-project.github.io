@@ -25,54 +25,123 @@
 .contact-left {
   width: 100%;
   height: max-content;
-  /* background-color: green; */
 }
 
-form .input-box {
-  width: 50%;
+.contact-left form {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Left Form */
+
+.contact-left form .left-form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.contact-left form .left-form .input-box {
+  width: 100%;
   height: 50px;
   position: relative;
-  margin-top: 1rem;
   display: flex;
   align-items: center;
 }
 
-form .input-box input {
+.contact-left form .left-form .input-box input {
+  width: 100%;
+  height: 75%;
   background-color: transparent;
   border: none;
-  border-bottom: solid 1px white;
-  height: 75%;
+  border-bottom: solid 1px rgb(114, 114, 114);
   color: rgb(255, 255, 255);
-  padding: 5px 10px;
+  padding: 5px 13px;
   outline: none;
   font-size: 1rem;
   border-radius: 2px;
   font-weight: 400;
 }
-
 .input-name {
   text-transform: capitalize;
 }
 
-form .input-box input:focus,
-form .input-box input:valid {
-  background-image: linear-gradient(to right, #1ae6e696 70%, #ff9900);
+.contact-left form .left-form .input-box input:focus,
+.contact-left form .left-form .input-box input:valid {
+  background-color: rgba(0, 0, 0, 0.63);
 }
 
-form .input-box .tes {
-  color: white;
-  position: absolute;
-  order: -10;
-}
-
-form .input-box input:focus ~ .tes,
-form .input-box input:valid ~ .tes {
+.contact-left form .left-form .input-box input:focus ~ span,
+.contact-left form .left-form .input-box input:valid ~ span {
   transform: translateY(-30px);
   font-size: 0.8rem;
   transition: 00.5s;
   font-weight: bold;
   color: rgb(255, 255, 255);
 }
+
+.contact-left form .left-form .input-box span {
+  color: white;
+  position: absolute;
+}
+
+/* Right Form */
+
+.contact-left form .right-form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.contact-left form .right-form .input-message {
+  width: 100%;
+  height: 100%;
+  padding-top: 6px;
+  padding-left: 0.5rem;
+  padding-bottom: 0.4rem;
+  display: flex;
+  position: relative;
+}
+
+.contact-left form .right-form .input-message span {
+  position: absolute;
+  color: white;
+}
+
+.contact-left form .right-form .input-message textarea {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 1px rgb(114, 114, 114);
+  color: rgb(255, 255, 255);
+  padding: 5px 13px;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 2px;
+  font-weight: 400;
+  resize: none;
+}
+
+.contact-left form .right-form .input-message textarea:focus {
+  background-color: rgba(0, 0, 0, 0.63);
+}
+
+.contact-left form .right-form .input-message textarea:focus ~ .text-field {
+  transform: translateY(-20px);
+  font-size: 0.8rem;
+  transition: 00.5s;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+/* Button Send */
 
 .btn-send {
   width: 80px;
@@ -81,6 +150,7 @@ form .input-box input:valid ~ .tes {
   background-color: #ff9900;
   outline: none;
   border: none;
+  margin-top: 1rem;
 }
 
 .btn-send:active {
@@ -91,5 +161,5 @@ form .input-box input:valid ~ .tes {
 /* Right Side Contact Section _________________________________________________________________*/
 
 .contact-right {
-  background-color: blueviolet;
+  background-color: #ff9900;
 }
