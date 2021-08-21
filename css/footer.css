@@ -1,5 +1,52 @@
 footer {
-  height: 300px;
+  height: max-content;
   width: 100%;
-  background-color: #333;
+  background-color: rgb(182, 182, 182);
+  z-index: 1000;
+}
+
+.footer-top {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.footer-left {
+  color: black;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.footer-mid h5 {
+  font-size: 1.2rem;
+}
+
+.footer-mid ul {
+  list-style: none;
+}
+
+.footer-mid ul li {
+  color: rgb(75, 74, 74);
+  font-size: 0.8rem;
+  padding: 0.2rem 0px;
+}
+
+.footer-right h5 {
+  font-size: 1.2rem;
+}
+
+.footer-right ul {
+  list-style: none;
+}
+
+.footer-right ul li {
+  color: rgb(75, 74, 74);
+  font-size: 0.8rem;
+  padding: 0.2rem 0px;
+}
+
+.footer-bottom {
+  height: 40px;
+  width: 100%;
+  background-color: black;
 }
